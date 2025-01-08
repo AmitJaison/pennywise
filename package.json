@@ -23,7 +23,7 @@
     "react-native-gesture-handler": "~2.20.2",
     "react-native-pdf": "^6.7.5",
     "react-native-pdf-lib": "^1.0.0",
-    "expo-random": "undefined"
+    "expo-random": "^12.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2"

@@ -20,11 +20,13 @@ final class AuthViewModelTests: XCTestCase {
         // Clean up any test keychain entries
         KeychainHelper.delete(key: "password-test@example.com")
         KeychainHelper.delete(key: "password-dup@example.com")
+        KeychainHelper.delete(key: "session-activeUserID")
     }
 
     override func tearDown() async throws {
         KeychainHelper.delete(key: "password-test@example.com")
         KeychainHelper.delete(key: "password-dup@example.com")
+        KeychainHelper.delete(key: "session-activeUserID")
     }
 
     func test_signUp_createsUser_andSetsAuthenticated() throws {

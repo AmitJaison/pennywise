@@ -37,7 +37,9 @@ class AuthViewModel {
         guard let user = try modelContext.fetch(descriptor).first else {
             throw AuthError.invalidCredentials
         }
-        let stored = KeychainHelper.load(key: "password-\(lowerEmail)") ?? Data()
+        guard let stored = KeychainHelper.load(key: "password-\(lowerEmail)") else {
+            throw AuthError.invalidCredentials
+        }
         let input = Data(SHA256.hash(data: Data(password.utf8)))
         guard stored == input else { throw AuthError.invalidCredentials }
         appState.setCurrentUser(user)
@@ -46,7 +48,7 @@ class AuthViewModel {
     func signUp(name: String, email: String, password: String) throws {
         let lowerEmail = email.lowercased()
         let descriptor = FetchDescriptor<User>(predicate: #Predicate { $0.email == lowerEmail })
-        if let _ = try? modelContext.fetch(descriptor).first {
+        if try modelContext.fetch(descriptor).first != nil {
             throw AuthError.emailAlreadyExists
         }
         let user = User(name: name, email: lowerEmail)
@@ -63,6 +65,7 @@ class AuthViewModel {
 
     // MARK: - Biometrics
 
+    @MainActor
     func authenticateWithBiometrics() async -> Bool {
         let context = LAContext()
         var error: NSError?

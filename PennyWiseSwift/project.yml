@@ -32,6 +32,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.amitjaison.pennywiseTests
+        GENERATE_INFOPLIST_FILE: YES
 
 schemes:
   PennyWise:

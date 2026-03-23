@@ -11,6 +11,7 @@ import {
   Platform,
   Alert
 } from 'react-native';
+import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import { useTransactions } from '../context/TransactionContext';
 import { predictCategory } from '../utils/categoryPredictor';
 import ImportPassbook from './ImportPassbook';
@@ -21,6 +22,8 @@ const AddTransactionModal = ({ visible, onClose, editingTransaction = null }) =>
   const [amount, setAmount] = useState('');
   const [type, setType] = useState('expense');
   const [category, setCategory] = useState('');
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [isDatePickerVisible, setDatePickerVisible] = useState(false);
   const { addTransaction, updateTransaction } = useTransactions();
 
   // Set initial values if editing
@@ -30,6 +33,7 @@ const AddTransactionModal = ({ visible, onClose, editingTransaction = null }) =>
       setAmount(Math.abs(editingTransaction.amount).toString());
       setType(editingTransaction.amount < 0 ? 'expense' : 'income');
       setCategory(editingTransaction.category);
+      setDate(editingTransaction.date || new Date().toISOString().split('T')[0]);
     }
   }, [editingTransaction]);
 
@@ -46,6 +50,7 @@ const AddTransactionModal = ({ visible, onClose, editingTransaction = null }) =>
     setAmount('');
     setType('expense');
     setCategory('');
+    setDate(new Date().toISOString().split('T')[0]);
     setActiveTab('manual');
   };
 
@@ -65,7 +70,7 @@ const AddTransactionModal = ({ visible, onClose, editingTransaction = null }) =>
       title,
       amount: type === 'expense' ? -Number(amount) : Number(amount),
       category,
-      date: new Date().toISOString().split('T')[0]
+      date
     };
 
     if (editingTransaction) {
@@ -75,6 +80,19 @@ const AddTransactionModal = ({ visible, onClose, editingTransaction = null }) =>
     }
 
     handleClose();
+  };
+
+  const showDatePicker = () => {
+    setDatePickerVisible(true);
+  };
+
+  const hideDatePicker = () => {
+    setDatePickerVisible(false);
+  };
+
+  const handleConfirm = (selectedDate) => {
+    setDate(selectedDate.toISOString().split('T')[0]);
+    hideDatePicker();
   };
 
   return (
@@ -164,6 +182,21 @@ const AddTransactionModal = ({ visible, onClose, editingTransaction = null }) =>
                 />
 
                 <TouchableOpacity
+                  style={styles.input}
+                  onPress={showDatePicker}
+                >
+                  <Text>{date}</Text>
+                </TouchableOpacity>
+
+                <DateTimePickerModal
+                  isVisible={isDatePickerVisible}
+                  mode="date"
+                  onConfirm={handleConfirm}
+                  onCancel={hideDatePicker}
+                  display="inline"
+                />
+
+                <TouchableOpacity
                   style={styles.submitButton}
                   onPress={handleSubmit}
                 >
@@ -250,7 +283,7 @@ const styles = StyleSheet.create({
   submitButtonText: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: 'bold',
   },
   categoryContainer: {
     marginBottom: 15,

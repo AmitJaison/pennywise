@@ -12,6 +12,8 @@ enum CurrencyFormatter {
         return f
     }()
 
+    // @MainActor ensures single-threaded access — NumberFormatter is not thread-safe
+    @MainActor
     static func format(_ amount: Double) -> String {
         formatter.string(from: NSNumber(value: amount)) ?? "₹0.00"
     }

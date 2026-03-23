@@ -13,6 +13,7 @@
 		48353F5CF65E5EB9078C9574 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F400A80C22B773E5335BD74 /* CurrencyFormatter.swift */; };
 		4A097535E5A92CBE6EEB35A1 /* RecentTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F61826B8CE0948CC4B89B /* RecentTransactionsView.swift */; };
 		538E9EC10F7AC830C43972B2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD293396CA09944F71D05A9 /* SignUpView.swift */; };
+		53CC43399028F2300AD0265A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CBE17EFD36B5DB54B2F0A /* MainTabView.swift */; };
 		5EFFE5EB4B73FAA88A5F5155 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1E8DED1BC9CDF478503A3 /* AppState.swift */; };
 		68BF11B7EDCEE515D0C21659 /* TransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74754299B40B659B39033E22 /* TransactionRowView.swift */; };
 		779DA378D1CA85A0CCDE345E /* PDFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FAFF7A20D5CD9A6A22111 /* PDFParser.swift */; };
@@ -78,6 +79,7 @@
 		B8D4178B9524504D47B568EB /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
 		C4B1E8DED1BC9CDF478503A3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		C646B5299ECF3976AEEBD7FC /* ExpenseSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseSummaryView.swift; sourceTree = "<group>"; };
+		CF2CBE17EFD36B5DB54B2F0A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		DB489450ADB8A9C2A2D11DE0 /* PennyWiseTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PennyWiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB770931E6D6C26588E13BDB /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		EE9B00748873E63DA4C57A13 /* CategoryPredictorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPredictorTests.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B8D4178B9524504D47B568EB /* ImportView.swift */,
+				CF2CBE17EFD36B5DB54B2F0A /* MainTabView.swift */,
 				1B65C7A0A90F74D85C71D32E /* MonthPickerView.swift */,
 				0CA250393A4888A82FDE47AE /* PINEntryView.swift */,
 				6223AAE5BC0EBA84C31C50D8 /* TransactionFormSheet.swift */,
@@ -328,6 +331,7 @@
 				E1B1D8294CF0638CE103837C /* ImportView.swift in Sources */,
 				E65B410FC18A6C9B659D2169 /* ImportViewModel.swift in Sources */,
 				EC5A6CE4D6266041540E4C03 /* KeychainHelper.swift in Sources */,
+				53CC43399028F2300AD0265A /* MainTabView.swift in Sources */,
 				257465B955BA17B452A1DCA4 /* MonthPickerView.swift in Sources */,
 				779DA378D1CA85A0CCDE345E /* PDFParser.swift in Sources */,
 				CCAC898037C4126C28108E41 /* PINEntryView.swift in Sources */,

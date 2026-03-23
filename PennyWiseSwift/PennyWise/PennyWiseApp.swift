@@ -20,9 +20,9 @@ struct ContentView: View {
 
     var body: some View {
         if appState.isAuthenticated {
-            Text("Main App (placeholder — replaced in Task 12)")
+            MainTabView()
         } else {
-            Text("Auth (placeholder — replaced in Task 6)")
+            AuthView()
         }
     }
 }

@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D32FE7BDA087EB4C73A2957 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3569EEC0F1D4C5E51E815F89 /* TransactionViewModel.swift */; };
 		3E273334B2DBF5CDB1EC4332 /* CategoryPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0E96585237AB56C6BF005 /* CategoryPredictor.swift */; };
 		48353F5CF65E5EB9078C9574 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F400A80C22B773E5335BD74 /* CurrencyFormatter.swift */; };
+		538E9EC10F7AC830C43972B2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD293396CA09944F71D05A9 /* SignUpView.swift */; };
 		5EFFE5EB4B73FAA88A5F5155 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1E8DED1BC9CDF478503A3 /* AppState.swift */; };
 		7C67881E55C2225833A026F4 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD198B6A05F2C1CDF3523C /* TransactionType.swift */; };
+		82ABCEF5198C37403D2A10BC /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36695FBC3A8CFA6C4B23B8 /* AuthView.swift */; };
 		9175B12D86917B070A64E3C7 /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C71C3A9BE079E954A8FE78 /* AuthViewModelTests.swift */; };
 		9C976F9E8473A0BED974F3A4 /* PennyWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC7B6BD27644B61426F4EAC /* PennyWiseApp.swift */; };
 		9E86725978980BDBFD6F3F23 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F556CAC2C852B25406116CB /* AuthViewModel.swift */; };
 		9ED74DA1D7707C5044200D97 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16882F1CE7727D58140089BB /* CurrencyFormatterTests.swift */; };
 		C3AB829139D6F931D7AC9998 /* CategoryPredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B00748873E63DA4C57A13 /* CategoryPredictorTests.swift */; };
+		C9EE6A32730A608B2BF0C9B0 /* TransactionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268CED725FF3877C71D42A97 /* TransactionViewModelTests.swift */; };
+		CCAC898037C4126C28108E41 /* PINEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA250393A4888A82FDE47AE /* PINEntryView.swift */; };
 		D35EED6726C98F5BF585B6AB /* PennyWiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB900A669F0D74FA2153C36 /* PennyWiseTests.swift */; };
 		EC5A6CE4D6266041540E4C03 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB770931E6D6C26588E13BDB /* KeychainHelper.swift */; };
+		EEBB5A296AC31B4FF45EB4CC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AE007D0D81A6FD14DFB6 /* SignInView.swift */; };
 		F0315B3C35835E58865D4879 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A259D95E91A48317F94307 /* Transaction.swift */; };
 		F3848C86A98790CF3F6AF528 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18058C9E79EC102236908406 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -34,14 +40,20 @@
 
 /* Begin PBXFileReference section */
 		05C71C3A9BE079E954A8FE78 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
+		0CA250393A4888A82FDE47AE /* PINEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINEntryView.swift; sourceTree = "<group>"; };
+		0FD293396CA09944F71D05A9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		16882F1CE7727D58140089BB /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		18058C9E79EC102236908406 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2089AE007D0D81A6FD14DFB6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		268CED725FF3877C71D42A97 /* TransactionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModelTests.swift; sourceTree = "<group>"; };
 		2AF0E96585237AB56C6BF005 /* CategoryPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPredictor.swift; sourceTree = "<group>"; };
 		2F400A80C22B773E5335BD74 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		3569EEC0F1D4C5E51E815F89 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		59C1363E3911AF88EB27EC43 /* PennyWise.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PennyWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F556CAC2C852B25406116CB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		7CC7B6BD27644B61426F4EAC /* PennyWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennyWiseApp.swift; sourceTree = "<group>"; };
 		83A259D95E91A48317F94307 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		9A36695FBC3A8CFA6C4B23B8 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		C4B1E8DED1BC9CDF478503A3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		DB489450ADB8A9C2A2D11DE0 /* PennyWiseTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PennyWiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB770931E6D6C26588E13BDB /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
@@ -51,6 +63,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0627027DE08A0ABBA5B7C58A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0CA250393A4888A82FDE47AE /* PINEntryView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		1DEB998AED5CB76B2EAEB496 /* PennyWise */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +79,7 @@
 				3D7A3B4E92B78ABC56F03033 /* Models */,
 				DBC3230338E4F3DC1F03D233 /* Utils */,
 				28315E43C76B87B0862ACAC1 /* ViewModels */,
+				FD0E54CF842C625179A9CA3E /* Views */,
 			);
 			path = PennyWise;
 			sourceTree = "<group>";
@@ -67,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				5F556CAC2C852B25406116CB /* AuthViewModel.swift */,
+				3569EEC0F1D4C5E51E815F89 /* TransactionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -88,6 +110,16 @@
 				DB489450ADB8A9C2A2D11DE0 /* PennyWiseTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7CD09C493ED28E52A3855F7B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9A36695FBC3A8CFA6C4B23B8 /* AuthView.swift */,
+				2089AE007D0D81A6FD14DFB6 /* SignInView.swift */,
+				0FD293396CA09944F71D05A9 /* SignUpView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		B2DC448CBBBDB36AE2D957D8 = {
@@ -116,13 +148,16 @@
 				EE9B00748873E63DA4C57A13 /* CategoryPredictorTests.swift */,
 				16882F1CE7727D58140089BB /* CurrencyFormatterTests.swift */,
 				FAB900A669F0D74FA2153C36 /* PennyWiseTests.swift */,
+				268CED725FF3877C71D42A97 /* TransactionViewModelTests.swift */,
 			);
 			path = PennyWiseTests;
 			sourceTree = "<group>";
 		};
-		"TEMP_7227C723-C274-4928-AFC3-96033100037D" /* Views */ = {
+		FD0E54CF842C625179A9CA3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7CD09C493ED28E52A3855F7B /* Auth */,
+				0627027DE08A0ABBA5B7C58A /* Shared */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +248,7 @@
 				C3AB829139D6F931D7AC9998 /* CategoryPredictorTests.swift in Sources */,
 				9ED74DA1D7707C5044200D97 /* CurrencyFormatterTests.swift in Sources */,
 				D35EED6726C98F5BF585B6AB /* PennyWiseTests.swift in Sources */,
+				C9EE6A32730A608B2BF0C9B0 /* TransactionViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,13 +257,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFFE5EB4B73FAA88A5F5155 /* AppState.swift in Sources */,
+				82ABCEF5198C37403D2A10BC /* AuthView.swift in Sources */,
 				9E86725978980BDBFD6F3F23 /* AuthViewModel.swift in Sources */,
 				3E273334B2DBF5CDB1EC4332 /* CategoryPredictor.swift in Sources */,
 				48353F5CF65E5EB9078C9574 /* CurrencyFormatter.swift in Sources */,
 				EC5A6CE4D6266041540E4C03 /* KeychainHelper.swift in Sources */,
+				CCAC898037C4126C28108E41 /* PINEntryView.swift in Sources */,
 				9C976F9E8473A0BED974F3A4 /* PennyWiseApp.swift in Sources */,
+				EEBB5A296AC31B4FF45EB4CC /* SignInView.swift in Sources */,
+				538E9EC10F7AC830C43972B2 /* SignUpView.swift in Sources */,
 				F0315B3C35835E58865D4879 /* Transaction.swift in Sources */,
 				7C67881E55C2225833A026F4 /* TransactionType.swift in Sources */,
+				2D32FE7BDA087EB4C73A2957 /* TransactionViewModel.swift in Sources */,
 				F3848C86A98790CF3F6AF528 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,29 +4,29 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "1.23.1",
-    "expo": "~52.0.7",
-    "expo-auth-session": "~6.0.0",
-    "expo-crypto": "~14.0.1",
-    "expo-document-picker": "~13.0.1",
-    "expo-file-system": "~18.0.4",
-    "expo-local-authentication": "~15.0.1",
-    "expo-status-bar": "~2.0.0",
-    "react": "18.3.1",
-    "react-native": "0.76.3",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "expo": "~53.0.0",
+    "expo-auth-session": "~6.1.5",
+    "expo-crypto": "~14.1.4",
+    "expo-document-picker": "~13.1.5",
+    "expo-file-system": "~18.1.10",
+    "expo-local-authentication": "~16.0.4",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.2",
     "react-native-blob-util": "^0.19.11",
-    "react-native-gesture-handler": "~2.20.2",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-modal-datetime-picker": "^18.0.0",
     "react-native-pdf": "^6.7.5",
-    "react-native-pdf-lib": "^1.0.0",
-    "expo-random": "^12.0.0"
+    "react-native-pdf-lib": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2"
+    "@babel/core": "^7.26.0"
   },
   "private": true
 }

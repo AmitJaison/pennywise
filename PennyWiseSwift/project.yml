@@ -32,3 +32,16 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.amitjaison.pennywiseTests
+
+schemes:
+  PennyWise:
+    build:
+      targets:
+        PennyWise: all
+    test:
+      targets:
+        - PennyWiseTests
+    run:
+      config: Debug
+    archive:
+      config: Release

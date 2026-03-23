@@ -63,7 +63,7 @@
 			path = PennyWiseTests;
 			sourceTree = "<group>";
 		};
-		"TEMP_E089DF2C-2AB4-43EE-91DE-0B8533D51D70" /* Views */ = {
+		"TEMP_2DEF1A09-496B-4748-80FF-39314C350D94" /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);

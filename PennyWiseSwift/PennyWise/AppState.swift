@@ -3,13 +3,17 @@ import Foundation
 import SwiftData
 
 @Observable
+@MainActor
 class AppState {
     var isAuthenticated: Bool = false
     var currentUserID: UUID?
     var currentUser: User?
 
+    private static let sessionKey = "session-activeUserID"
+
     init() {
-        if let idString = UserDefaults.standard.string(forKey: "activeUserID"),
+        if let data = KeychainHelper.load(key: Self.sessionKey),
+           let idString = String(data: data, encoding: .utf8),
            let id = UUID(uuidString: idString) {
             self.currentUserID = id
         }
@@ -20,7 +24,9 @@ class AppState {
     func setCurrentUser(_ user: User) {
         currentUser = user
         currentUserID = user.id
-        UserDefaults.standard.set(user.id.uuidString, forKey: "activeUserID")
+        if let data = user.id.uuidString.data(using: .utf8) {
+            KeychainHelper.store(value: data, key: Self.sessionKey)
+        }
         isAuthenticated = true
     }
 
@@ -28,6 +34,6 @@ class AppState {
         isAuthenticated = false
         currentUser = nil
         currentUserID = nil
-        UserDefaults.standard.removeObject(forKey: "activeUserID")
+        KeychainHelper.delete(key: Self.sessionKey)
     }
 }
